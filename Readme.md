@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Сергей Перехода](https://up.htmlacademy.ru/htmlcss-individual/1/user/2458259).
-* Наставник: `Неизвестно`.
+* Наставник: `Юрий Белобородов`(https://htmlacademy.ru/profile/id514591).
 
 ---
 
