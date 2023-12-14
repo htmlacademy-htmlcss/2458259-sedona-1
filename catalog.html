@@ -51,7 +51,7 @@
         </ul>
       </header>
       <section class="catalog-hotels">
-        <h2 class="visually-hidden">Список гостинец с фильтрами</h2>
+        <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -117,8 +117,65 @@
               </ul>
             </fieldset>
             <button class="button" type="submit">Применить</button>
-            <a class="reset" href="catalog.html">Сбросить</a>
+            <button class="button" type="reset">Сбросить</button>
         </form>
+        <select class="select-control" aria-label="Сортировка">
+          <option value="cheap">Сначала дешёвое</option>
+          <option value="popular">Сначала популярное</option>
+          <option value="expensive">Сначала дорогое</option>
+        </select>
+        <a class="button" href="#">
+          <span class="visually-hidden">Показать карточки</span>
+        </a>
+        <a class="button" href="#">
+          <span class="visually-hidden">Показать список</span>
+        </a>
+        <a class="button" href="#">
+          <span class="visually-hidden">Показать отдельно</span>
+        </a>
+        <ul class="hotels-list">
+          <li class="hotels-card">
+            <a class="hotels-card-link" href="#">
+              <img class="hotels-card-image" src="#" alt="">
+              <h3 class="hotels-card-title">Amara Resort & Spa</h3>
+            </a>
+            <p class="hotels-card-desscription">Гостиница <b>От 4000 ₽</b></p>
+            <a class="hotels-card-button" href="#">подробнее</a>
+            <button class="button-cards" type="submit">в избранное</button>
+            <p class="hotels-card-desscription">Рейтинг: 8,5</p>
+          </li>
+          <li class="hotels-card">
+            <a class="hotels-card-link" href="#">
+              <img class="hotels-card-image" src="#" alt="">
+              <h3 class="hotels-card-title">Villas at Poco Diablo</h3>
+            </a>
+            <p class="hotels-card-desscription">Гостиница <b>От 5000 ₽</b></p>
+            <a class="hotels-card-button" href="#">подробнее</a>
+            <button class="button-cards" type="submit">в избранное</button>
+            <p class="hotels-card-desscription">Рейтинг: 9,2</p>
+          </li>
+          <li class="hotels-card">
+            <a class="hotels-card-link" href="#">
+              <img class="hotels-card-image" src="#" alt="">
+              <h3 class="hotels-card-title">Desert Quail Inn</h3>
+            </a>
+            <p class="hotels-card-desscription">Гостиница <b>От 2500 ₽</b></p>
+            <a class="hotels-card-button" href="#">подробнее</a>
+            <button class="button-cards" type="submit">в избранное</button>
+            <p class="hotels-card-desscription">Рейтинг: 6,9</p>
+          </li>
+          <li class="hotels-card">
+            <a class="hotels-card-link" href="#">
+              <img class="hotels-card-image" src="#" alt="">
+              <h3 class="hotels-card-title">GreenTree Inn</h3>
+            </a>
+            <p class="hotels-card-desscription">Гостиница <b>От 1500 ₽</b></p>
+            <a class="hotels-card-button" href="#">подробнее</a>
+            <button class="button-cards" type="submit">в избранное</button>
+            <p class="hotels-card-desscription">Рейтинг: 5,0</p>
+          </li>
+        </ul>
+
       </section>
     </main>
     <footer class="page-footer">
