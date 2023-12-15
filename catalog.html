@@ -8,8 +8,8 @@
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-link" href="index.html"
-              ><img src="#" alt="Логотип Седона"
-            /></a>
+          ><img src="#" alt="Логотип Седона"
+        /></a>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
@@ -61,24 +61,35 @@
             <legend class="catalog-filter-title">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="Бассейн" />
+                <label for="control">
+                  <input
+                    class="control-input"
+                    type="checkbox"
+                    name="Бассейн"
+                    id="control"
+                  />
                   Бассейн
                 </label>
               </li>
               <li class="catalog-filter-item">
-                <label class="control">
+                <label for="control">
                   <input
                     class="control-input"
                     type="checkbox"
                     name="Парковка"
+                    id="control"
                   />
                   Парковка
                 </label>
               </li>
               <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="Wi-Fi" />
+                <label for="control">
+                  <input
+                    class="control-input"
+                    type="checkbox"
+                    name="Wi-Fi"
+                    id="control"
+                  />
                   Wi-Fi
                 </label>
               </li>
@@ -88,34 +99,37 @@
             <legend class="catalog-filter-title">Тип Жилья:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
-                <label class="control">
+                <label for="control">
                   <input
                     class="control-input"
                     type="radio"
                     name="type-housing"
                     value="hotel"
+                    id="control"
                   />
                   Гостиница
                 </label>
               </li>
               <li class="catalog-filter-item">
-                <label class="control">
+                <label for="control">
                   <input
                     class="control-input"
                     type="radio"
                     name="type-housing"
                     value="motel"
+                    id="control"
                   />
                   Мотель
                 </label>
               </li>
               <li class="catalog-filter-item">
-                <label class="control">
+                <label for="control">
                   <input
                     class="control-input"
                     type="radio"
                     name="type-housing"
                     value="apartments"
+                    id="control"
                   />
                   Апартаменты
                 </label>
@@ -126,23 +140,25 @@
             <legend class="catalog-filter-title">Стоимость,₽:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
-                <label class="control">
+                <label for="control">
                   <input
                     class="control-input"
                     type="text"
                     name="price"
                     value="0"
+                    id="control"
                   />
                   от
                 </label>
               </li>
               <li class="catalog-filter-item">
-                <label class="control">
+                <label for="control">
                   <input
                     class="control-input"
                     type="text"
                     name="price"
                     value="9000"
+                    id="control"
                   />
                   до
                 </label>
@@ -158,24 +174,24 @@
           <button class="button" type="reset">Сбросить</button>
         </form>
         <div>
-          <h2 class="catalog-hotels">Найдено гостиниц: 38</h2>
+          <h2 class="catalog-hotels">Найдено гостиниц: <span>38</span></h2>
           <select class="select-control" aria-label="Сортировка">
-                <option value="cheap">Сначала дешёвое</option>
-                <option value="popular">Сначала популярное</option>
-                <option value="expensive">Сначала дорогое</option>
-              </select>
-        <div>
-           <button class="button" >
-                <span class="visually-hidden">Показать карточки</span>
-              </button>
-              <button class="button" >
-                <span class="visually-hidden">Показать список</span>
-              </button>
-              <button class="button" >
-                <span class="visually-hidden">Показать отдельно</span>
-              </button>
+            <option value="cheap">Сначала дешёвое</option>
+            <option value="popular">Сначала популярное</option>
+            <option value="expensive">Сначала дорогое</option>
+          </select>
+          <div>
+            <button class="button">
+              <span class="visually-hidden">Показать карточки</span>
+            </button>
+            <button class="button">
+              <span class="visually-hidden">Показать список</span>
+            </button>
+            <button class="button">
+              <span class="visually-hidden">Показать отдельно</span>
+            </button>
+          </div>
         </div>
-      </div>
         <ul class="hotels-list">
           <li class="hotels-card">
             <a class="hotels-card-link" href="#">
@@ -190,7 +206,7 @@
               <span>Star 2</span>
               <span>Star 3</span>
               <span>Star 4</span>
-          </div>
+            </div>
             <p class="hotels-card-desscription">Рейтинг: <span>8,5</span></p>
           </li>
           <li class="hotels-card">
@@ -206,7 +222,7 @@
               <span>Star 2</span>
               <span>Star 3</span>
               <span>Star 4</span>
-          </div>
+            </div>
             <p class="hotels-card-desscription">Рейтинг: <span>9,2</span></p>
           </li>
           <li class="hotels-card">
@@ -221,7 +237,7 @@
               <span>Star 1</span>
               <span>Star 2</span>
               <span>Star 3</span>
-          </div>
+            </div>
             <p class="hotels-card-desscription">Рейтинг: <span>6,9</span></p>
           </li>
           <li class="hotels-card">
@@ -235,7 +251,7 @@
             <div>
               <span>Star 1</span>
               <span>Star 2</span>
-          </div>
+            </div>
             <p class="hotels-card-desscription">Рейтинг: <span>5,0</span></p>
           </li>
         </ul>
@@ -271,16 +287,17 @@
         action="https://echo.htmlacademy.ru/"
         method="post"
       >
-      <div class="newsletter">
-      <label for="newsletter-email">Email</label>
-        <input
-          class="field"
-          placeholder="Ваш email"
-          type="email"
-          name="newsletter-email"
-          id="newsletter-email"
-          required
-        /></div>
+        <div class="newsletter">
+          <label for="newsletter-email">Email</label>
+          <input
+            class="field"
+            placeholder="Ваш email"
+            type="email"
+            name="newsletter-email"
+            id="newsletter-email"
+            required
+          />
+        </div>
         <button class="button newsletter-button" type="submit">
           <span class="visually-hidden">Подписаться</span>
         </button>
@@ -301,7 +318,9 @@
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru"
+            <a
+              class="footer-social-link"
+              href="https://www.youtube.com/user/htmlacademyru"
               ><span class="visually-hidden">Youtube</span>
             </a>
           </li>
