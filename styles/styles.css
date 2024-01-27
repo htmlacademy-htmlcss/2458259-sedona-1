@@ -17,21 +17,46 @@ body{
   font-size: 24px;
   line-height: 28px;
   text-align: center;
+  margin: 0;
+}
+.navigation-list,
+.navigation-user,
+.advantages-list,
+.service-list,
+.footer-social-list {
+  list-style: none;
 }
 /* Button??? */
-.button {
+button {
   color: #ffffff;
   background-color: #756157;
+  text-transform: uppercase;
+  border-radius: 4px;
 }
-
-
+.button-small {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 8px 34px;
+}
+.button-big {
+  font-size: 20px;
+  line-height: 36px;
+  padding: 8px 50px;
+}
+.button-newsletter{
+  background-color: #82B3D3;
+  border-radius: 0px;
+}
 /* Header */
- .navigation-link{
+ .navigation-list,
+ .navigation-user{
   font-size: 20px;
   line-height: 24px;
   color: #000000;
-  text-decoration: none;
   text-transform: capitalize;
+ }
+ .navigation-link{
+  text-decoration: none;
  }
  /* Hero */
 .hero {
@@ -58,6 +83,7 @@ font-weight: 400;
   height: 385px;
   background-color: #82B3D3;
   color: #ffffff;
+  padding: 103px 85px;
 }
 .advantages-square,
 .advantages-turists{
@@ -78,7 +104,8 @@ font-weight: 400;
 .service-item {
   width: 400px;
   height: 385px;
-  background-color:rgba(131, 179, 211, 0.12) ;
+  background-color:rgba(131, 179, 211, 0.12);
+  padding: 80px 85px;
 }
 .service-food {
   background-color: #ffffff;
