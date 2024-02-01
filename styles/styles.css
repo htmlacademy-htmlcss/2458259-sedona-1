@@ -16,7 +16,6 @@ body{
   font-family: "PT Sans", sans-serif;
   font-size: 24px;
   line-height: 28px;
-  text-align: center;
   margin: 0;
 
 }
@@ -36,6 +35,7 @@ button {
   background-color: #756157;
   text-transform: uppercase;
   border-radius: 4px;
+  text-align: center;
 }
 .button-small {
   font-size: 16px;
@@ -76,12 +76,14 @@ button {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .text-m{
 font-size: 22px;
 line-height: 26px;
 font-weight: 400;
+text-align: center;
 }
 /* Advantages*/
 .advantages-item{
@@ -105,6 +107,7 @@ font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
+  text-align: center;
 }
 /* Service */
 .service-item {
@@ -117,12 +120,15 @@ font-weight: 400;
   background-color: #ffffff;
 }
 /* Search */
-.search{}
+.search{
+  text-align: center;
+}
 
 /* Newsletter */
 .newsletter {
   background-color: #756157;
   color: #ffffff;
+  text-align: center;
 }
 /* Footer */
 /* Contact phone*/
@@ -132,6 +138,7 @@ font-weight: 400;
   line-height: 40px;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
 }
 .catalog{
   background-image: url(../images/catalog-background.jpg);
@@ -218,6 +225,7 @@ font-weight: 400;
   width: 60px;
   height: 60px;
   border-radius: 4px;
+  text-align: center;
 }
 .pagination-link{
   background-color:#82B3D3;
