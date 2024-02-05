@@ -1,137 +1,140 @@
 @font-face {
-  font-family:"PT Sans";
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   src: url("fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
+
 @font-face {
-  font-family:"PT Sans";
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   src: url("fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
-body{
-  font-family: "PT Sans", sans-serif;
+
+body {
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 24px;
   line-height: 28px;
   margin: 0;
+}
 
-}
-.navigation-list,
-.navigation-user,
-.advantages-list,
-.service-list,
-.footer-social-list,
-.catalog-filter-list,
-.breadcrumbs-item,
-.pagination-item {
+ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
-/* Button??? */
-button {
+
+.button {
   color: #ffffff;
   background-color: #756157;
   text-transform: uppercase;
   border-radius: 4px;
   text-align: center;
+  list-style: none;
 }
+
 .button-small {
   font-size: 16px;
   line-height: 20px;
   padding: 8px 34px;
   color: #ffffff;
 }
+
 .button-big {
   font-size: 20px;
   line-height: 36px;
   padding: 8px 50px;
 }
-.button-newsletter{
-  background-color: #82B3D3;
+
+.button-newsletter {
+  background-color: #82b3d3;
   border-radius: 0px;
 }
-/* Header */
- .navigation-list,
- .navigation-user{
+
+.navigation-list,
+.navigation-user {
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
   color: #000000;
- }
- .navigation-link{
+}
+
+.navigation-link {
   text-decoration: none;
   color: #000000;
- }
- /* Hero */
+}
+
 .hero {
-  background-image:url("../images/index-background.jpg");
-  background-color: #756157 ;
+  background-image: url("../images/index-background.jpg");
+  background-color: #756157;
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
-/* Text size advantages*/
-.text-l{
+
+.text-l {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
 }
 
-.text-m{
-font-size: 22px;
-line-height: 26px;
-font-weight: 400;
-text-align: center;
-}
-/* Advantages*/
-.advantages-item{
-  width: 400px;
-  height: 385px;
-  background-color: #82B3D3;
-  color: #ffffff;
-  padding: 103px 85px;
-}
-.advantages-square,
-.advantages-turists{
-  background-color:rgba(131, 179, 211, 0.12) ;
-  color: #000000;
-}
-.advantages-road{
-  background-color:rgba(131, 179, 211, 0.20) ;
-  color: #000000;
-}
-/* Text size heading*/
-.heading-m{
+.text-m {
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
   text-align: center;
 }
-/* Service */
-.service-item {
+
+.advantages-item {
   width: 400px;
   height: 385px;
-  background-color:rgba(131, 179, 211, 0.12);
-  padding: 80px 85px;
+  background-color: #82b3d3;
+  color: #ffffff;
+  padding: 103px 85px;
 }
-.service-food {
-  background-color: #ffffff;
+
+.advantages-square,
+.advantages-turists {
+  background-color: rgba(131, 179, 211, 0.12);
+  color: #000000;
 }
-/* Search */
-.search{
+
+.advantages-road {
+  background-color: rgba(131, 179, 211, 0.2);
+  color: #000000;
+}
+
+.heading-m {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
   text-align: center;
 }
 
-/* Newsletter */
+.service-item {
+  width: 400px;
+  height: 385px;
+  background-color: rgba(131, 179, 211, 0.12);
+  padding: 80px 85px;
+}
+
+.service-food {
+  background-color: #ffffff;
+}
+
+.search {
+  text-align: center;
+}
+
 .newsletter {
   background-color: #756157;
   color: #ffffff;
   text-align: center;
 }
-/* Footer */
-/* Contact phone*/
+
 .footer-contacts-adress-phone {
   color: #000000;
   font-size: 40px;
@@ -140,14 +143,16 @@ text-align: center;
   text-decoration: none;
   text-align: center;
 }
-.catalog{
+
+.catalog {
   background-image: url(../images/catalog-background.jpg);
   background-color: #000000;
   background-repeat: no-repeat;
   background-size: 100% auto;
   color: #ffffff;
 }
-.inner-header-title{
+
+.inner-header-title {
   font-size: 60px;
   line-height: 78px;
 }
@@ -156,23 +161,28 @@ text-align: center;
   color: #ffffff;
   text-decoration: none;
 }
-.catalog-filter-title{
+
+.catalog-filter-title {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
   text-transform: capitalize;
 }
-.catalog-filter-item{
+
+.catalog-filter-item {
   font-size: 18px;
   line-height: 23px;
 }
-.control-input{
+
+.control-input {
   font-size: 18px;
   line-height: 24px;
 }
+
 .button-submit,
-.button-reset{
-  background-color: #82B3D3;
+.button-reset {
+  color: #ffffff;
+  background-color: #82b3d3;
   border-radius: 4px;
   padding: 8px 50px;
   font-size: 16px;
@@ -180,62 +190,81 @@ text-align: center;
   line-height: 20px;
   text-transform: uppercase;
 }
-.button-reset{
-  background-color:black;
+
+.button-reset {
+  background-color: black;
 }
-.catalog-hotels{
+
+.catalog-hotels {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
 }
-.select-control{
+
+.select-control {
   color: #333;
   font-size: 18px;
   line-height: 21px;
 }
-.hotels-card{
+
+.hotels-card {
   list-style: none;
 }
-.hotels-card-link{
+
+.hotels-card-link {
   color: #000;
   font-weight: 700;
   text-decoration: none;
 }
-.hotels-card-text-s{
+
+.hotels-card-text-s {
   color: #333;
   font-size: 18px;
   line-height: 21px;
 }
-.price{
+
+.price {
   text-align: right;
 }
+
 .hotels-card-button,
-.button-cards{
+.button-cards {
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
 }
-.hotels-card-desscription{
+
+.hotels-card-desscription {
   color: #333;
   font-size: 16px;
   line-height: 20px;
 }
-.pagination-item{
+
+.pagination-item {
   width: 60px;
   height: 60px;
   border-radius: 4px;
   text-align: center;
 }
-.pagination-link{
-  background-color:#82B3D3;
+
+.pagination-link {
+  background-color: #82b3d3;
   color: #ffffff;
   text-decoration: none;
 }
-.pagination-current{
-  background-color: #F2F2F2;
+
+.pagination-current {
+  background-color: #f2f2f2;
   color: #000;
 }
-.newsletter-container{
+
+.newsletter-container {
   background-color: white;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
