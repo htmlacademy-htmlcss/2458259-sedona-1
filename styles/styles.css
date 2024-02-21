@@ -80,20 +80,23 @@ ul {
   padding: 0;
 }
 .navigation-list {
+  display: flex;
+  margin-left: 30px;
+  align-content: center;
+  justify-content: space-between;
   width: 340px;
 }
 .navigation-user {
   width: 400px;
-  margin-left: auto;
+  margin-left: 285px;
 }
 .navigation-item {
-  padding: 20px 16px 20px 16px;
+  padding: 0;
 }
 
 .navigation-link {
   text-decoration: none;
   color: #000000;
-  margin-left: 70px;
 }
 .visually-hidden {
   display: ;
@@ -221,15 +224,18 @@ ul {
   line-height: 36px;
   text-transform: uppercase;
 }
+
 .page-footer-container {
   width: 1200px;
   margin: 0 auto;
 }
+
 .footer-contacts {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .footer-social-list {
   margin-left: 70px;
   width: 150px;
@@ -246,6 +252,8 @@ ul {
 }
 
 .catalog {
+  width: 1200px;
+  height: 412px;
   background-image: url(../images/catalog-background.jpg);
   background-color: #000000;
   background-repeat: no-repeat;
@@ -254,13 +262,33 @@ ul {
 }
 
 .inner-header-title {
+  margin: 35px 565px 0 70px;
   font-size: 60px;
   line-height: 78px;
+}
+
+.breadcrumbs {
+  font-size: 16px;
+  line-height: 21px;
+  margin: 8px 946px 40px 70px;
 }
 
 .breadcrumbs-link {
   color: #ffffff;
   text-decoration: none;
+}
+
+.catalog-filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1020px;
+  margin: 40px 70px 70px;
+}
+
+.catalog-filter-group {
+  padding: 0;
+  border: none;
 }
 
 .catalog-filter-title {
@@ -269,10 +297,19 @@ ul {
   line-height: 24px;
   text-transform: capitalize;
 }
+.catalog-filter-list {
+  flex-direction: column;
+}
 
 .catalog-filter-item {
   font-size: 18px;
   line-height: 23px;
+}
+
+.button-catalog {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
 }
 
 .control-input {
@@ -294,6 +331,13 @@ ul {
 
 .button-reset {
   background-color: black;
+}
+
+.search-hotel {
+  display: flex;
+  width: 1020px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .catalog-hotels {
@@ -360,7 +404,8 @@ ul {
   color: #000;
 }
 
-.newsletter-container {
+.newsletter-catalog {
+  color: #000;
   background-color: white;
 }
 
