@@ -61,7 +61,9 @@ ul {
 
 .button-newsletter {
   background-color: #82b3d3;
-  border-radius: 0px;
+  border-radius: 0px 4px 4px 0px;
+  width: 232px;
+  height: 52px;
 }
 .navigation {
   display: flex;
@@ -132,10 +134,16 @@ ul {
   font-weight: 400;
   text-align: center;
 }
+
+.text-s {
+  font-size: 18px;
+  line-height: 21px;
+}
+
 .advantages-list {
   width: 100%;
   justify-content: space-between;
-  padding: 103px 85px 103px 85px;
+  text-align: center;
   margin: 0;
 }
 .advantages {
@@ -153,10 +161,23 @@ ul {
   color: #ffffff;
   padding: 103px 85px;
 }
+.advantages-title {
+  text-transform: uppercase;
+}
 
 .advantages-city,
 .advantages-bridge {
   width: 1200px;
+  display: flex;
+  padding: 0;
+}
+
+.advantages-bridge {
+  flex-direction: row-reverse;
+}
+
+.advantages-text-container {
+  padding: 102px 85px;
 }
 
 .advantages-square,
@@ -176,8 +197,13 @@ ul {
   font-weight: 400;
   text-align: center;
 }
-.service-title {
+
+.service-list {
   text-align: center;
+}
+
+.service-title {
+  text-transform: uppercase;
 }
 
 .service-text {
@@ -200,20 +226,22 @@ ul {
 }
 
 .search {
-  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 96px 304px;
   box-sizing: border-box;
   text-align: center;
-  padding: 96px 304px 96px 304px;
 }
 
 .newsletter {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  height: 415px;
   margin: 0 auto;
   justify-content: center;
   box-sizing: border-box;
-  width: 1200px;
-  padding: 96px 258px 104px 258px;
   background-color: #756157;
   color: #ffffff;
   text-align: center;
@@ -223,6 +251,12 @@ ul {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .page-footer-container {
@@ -257,7 +291,7 @@ ul {
   background-image: url(../images/catalog-background.jpg);
   background-color: #000000;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   color: #ffffff;
 }
 
@@ -333,6 +367,12 @@ ul {
   background-color: black;
 }
 
+.search-catalog {
+  width: 1060px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
 .search-hotel {
   display: flex;
   width: 1020px;
@@ -351,6 +391,10 @@ ul {
   color: #333;
   font-size: 18px;
   line-height: 21px;
+}
+
+.hotels-list {
+  justify-content: space-between;
 }
 
 .hotels-card {
