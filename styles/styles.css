@@ -68,11 +68,16 @@ ul {
   border-radius: 0px 4px 4px 0px;
   width: 232px;
   height: 52px;
+  padding: 0;
 }
 .navigation {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0 auto;
+  width: 1060px;
+  height: 64px;
+  margin-left: 70px;
 }
 
 .navigation-list,
@@ -87,13 +92,12 @@ ul {
 }
 .navigation-list {
   display: flex;
-  margin-left: 30px;
   align-content: center;
-  justify-content: space-between;
   width: 340px;
   height: 64px;
 }
 .navigation-user {
+  align-items: center;
   width: 285px;
   margin-left: 285px;
 }
@@ -113,8 +117,6 @@ ul {
 
 .navigation-button {
   padding: 0;
-  width: 160px;
-  height: 36px;
 }
 
 .visually-hidden {
@@ -286,6 +288,16 @@ ul {
   text-align: center;
 }
 
+.adversting {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.search-text-m {
+  margin: 0;
+  margin-bottom: 54px;
+}
+
 .newsletter {
   display: flex;
   flex-wrap: wrap;
@@ -311,6 +323,20 @@ ul {
   justify-content: center;
 }
 
+.field {
+  padding: 0;
+  width: 458px;
+  height: 52px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.submit-button-text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+}
+
 .page-footer-container {
   margin: 0 auto;
 }
@@ -319,11 +345,21 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-content: center;
+  height: 120px;
 }
 
 .footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   margin-left: 70px;
   width: 150px;
+}
+
+.footer-social-item {
+  min-width: 47px;
+  min-height: 40px;
 }
 
 .footer-contacts-adress-phone {
@@ -346,15 +382,22 @@ ul {
 }
 
 .inner-header-title {
-  margin: 35px 565px 0 70px;
+  margin: 0;
+  padding-top: 35px;
+  padding-left: 70px;
   font-size: 60px;
   line-height: 78px;
 }
 
 .breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 114px;
+  margin-left: 70px;
+  margin-top: 8px;
   font-size: 16px;
   line-height: 21px;
-  margin: 8px 946px 40px 70px;
 }
 
 .breadcrumbs-link {
@@ -371,18 +414,27 @@ ul {
 }
 
 .catalog-filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
   padding: 0;
   border: none;
 }
 
 .catalog-filter-title {
+  margin-bottom: 32px;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
   text-transform: capitalize;
 }
 .catalog-filter-list {
+  display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 101px;
 }
 
 .catalog-filter-item {
@@ -394,6 +446,7 @@ ul {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
+  justify-content: flex-end;
 }
 
 .control-input {
@@ -413,6 +466,10 @@ ul {
   text-transform: uppercase;
 }
 
+.button-submit {
+  margin-bottom: 32px;
+}
+
 .button-reset {
   background-color: black;
 }
@@ -425,7 +482,7 @@ ul {
 
 .search-hotel {
   display: flex;
-  width: 1020px;
+  width: 1060px;
   align-items: center;
   justify-content: space-between;
 }
