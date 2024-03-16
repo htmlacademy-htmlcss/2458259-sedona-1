@@ -512,10 +512,18 @@ ul {
 
 .hotels-card {
   display: grid;
-  grid-template-columns: 140px 20px 140px;
-  grid-template-rows: repeat(8, 37px);
+  grid-template-columns: 140px 140px;
+  gap: 16px 20px;
   padding: 20px;
+  justify-items: start;
   list-style: none;
+}
+
+.hotels-card-title {
+  text-align: start;
+  padding-top: 16px;
+  margin: 0;
+  height: 26px;
 }
 
 .hotels-card-link {
@@ -528,10 +536,17 @@ ul {
   color: #333;
   font-size: 18px;
   line-height: 21px;
+  width: 140px;
+  text-align: left;
+  grid-column: 2/1;
 }
 
 .price {
+  width: 140px;
   text-align: right;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
 }
 
 .hotels-card-button,
@@ -539,12 +554,20 @@ ul {
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
+  width: 140px;
+  height: 36px;
 }
 
 .hotels-card-desscription {
   color: #333;
   font-size: 16px;
   line-height: 20px;
+}
+
+.stars,
+.hotels-card-desscription {
+  width: 140px;
+  margin: 0;
 }
 
 .pagination {
