@@ -43,10 +43,13 @@ ul {
 }
 
 .button {
+  display: inline-block;
+  cursor: pointer;
   color: #ffffff;
   background-color: #756157;
   text-transform: uppercase;
   border-radius: 4px;
+  border: none;
   text-align: center;
   list-style: none;
 }
@@ -66,7 +69,7 @@ ul {
 
 .button-newsletter {
   background-color: #82b3d3;
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0 4px 4px 0;
   width: 232px;
   height: 52px;
   padding: 0;
@@ -95,6 +98,8 @@ ul {
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-content: center;
   width: 340px;
   height: 64px;
@@ -107,6 +112,7 @@ ul {
 }
 
 .navigation-item {
+  position: relative;
   padding: 20px 16px;
 }
 
@@ -119,6 +125,16 @@ ul {
   padding: 0;
   min-width: 44px;
   min-height: 64px;
+}
+
+.navigation-icon-svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: black;
 }
 
 .navigation-button {
@@ -300,6 +316,7 @@ ul {
 }
 
 .adversting {
+  text-transform: uppercase;
   margin: 0;
   margin-bottom: 20px;
 }
@@ -315,6 +332,9 @@ ul {
   flex-direction: column;
   height: 415px;
   margin: 0 auto;
+  background-image: url(../images/background-newsletter.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
   justify-content: center;
   box-sizing: border-box;
   background-color: #756157;
@@ -364,11 +384,14 @@ ul {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  margin-left: 70px;
-  width: 150px;
+  width: 142px;
 }
 
 .footer-social-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
   min-width: 47px;
   min-height: 40px;
 }
@@ -383,9 +406,17 @@ ul {
   text-align: center;
 }
 
+.footer-social-link {
+  display: block;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 47px 40px;
+}
+
 .catalog {
   height: 412px;
-  background-image: url(../images/catalog-background.jpg);
+  background-image: url("../images/catalog-background.jpg");
   background-color: #000000;
   background-repeat: no-repeat;
   background-size: cover;
@@ -429,8 +460,20 @@ ul {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-around;
+  height: 157px;
   padding: 0;
   border: none;
+}
+
+.control-input-checkbox {
+  height: 20px;
+  width: 20px;
+  border-radius: 4px;
+}
+
+.control-input-radio {
+  height: 20px;
+  width: 20px;
 }
 
 .catalog-filter-title {
@@ -450,8 +493,15 @@ ul {
 }
 
 .catalog-filter-item {
+  width: 143px;
   font-size: 18px;
   line-height: 23px;
+}
+
+.catalog-filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 288px;
 }
 
 .button-catalog {
@@ -478,12 +528,59 @@ ul {
   text-transform: uppercase;
 }
 
+.button-cards {
+  background-color: #82b3d3;
+}
+
 .button-submit {
   margin-bottom: 32px;
 }
 
 .button-reset {
   background-color: black;
+}
+
+.range {
+  outline: 1px solid red;
+  position: relative;
+  width: 288px;
+  height: 104px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.range_line {
+  width: 300px;
+  height: 5px;
+  background-color: #f2f2f2;
+}
+
+.range_line-progress {
+  width: 100px;
+  height: 5px;
+  background-color: #e4e4e4;
+  position: absolute;
+  left: 30px;
+}
+
+.range_button {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.range_button-less {
+  left: 30px;
+}
+
+.range_button-more {
+  left: 130px;
+}
+
+.hidden {
+  display: none;
 }
 
 .search-catalog {
@@ -494,9 +591,27 @@ ul {
 
 .search-hotel {
   display: flex;
+  margin-top: 50px;
   width: 1060px;
+  height: 46px;
   align-items: center;
   justify-content: space-between;
+}
+
+.select {
+  display: flex;
+  flex-wrap: wrap;
+  width: 160px;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.card-grid-toggle {
+  height: 48px;
+  width: 48px;
+  background-color: white;
+  border: 2px solid rgba(229, 229, 229, 1);
+  border-radius: 4px;
 }
 
 .catalog-hotels {
@@ -535,7 +650,7 @@ ul {
   text-align: start;
   padding-top: 16px;
   margin: 0;
-  height: 26px;
+  min-height: 26px;
 }
 
 .hotels-card-link {
@@ -571,9 +686,17 @@ ul {
 }
 
 .hotels-card-desscription {
-  color: #333;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 35px;
+  color: #333;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+  width: 140px;
+  min-height: 37px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  border-radius: 4px;
 }
 
 .stars,
@@ -582,17 +705,41 @@ ul {
   margin: 0;
 }
 
+.stars {
+  display: flex;
+  width: 140px;
+  padding-top: 10px;
+}
+
+.rating-star {
+  width: 18px;
+  height: 17px;
+  padding-right: 6px;
+}
+
+.rating-star {
+  background-image: url("../images/star.svg");
+  background-repeat: no-repeat;
+}
+
 .pagination {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  justify-content: space-between;
+  width: 400px;
+  margin-bottom: 60px;
 }
 
 .pagination-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
   width: 60px;
   height: 60px;
   border-radius: 4px;
   text-align: center;
+  background-color: rgba(130, 179, 211, 1);
 }
 
 .pagination-link {
@@ -602,11 +749,24 @@ ul {
 }
 
 .pagination-current {
-  background-color: #f2f2f2;
-  color: #000;
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.pagination-dots {
+  background-color: white;
+  color: black;
 }
 
 .newsletter-catalog {
+  background-color: white;
+}
+
+.pagination-link-current {
+  color: #000;
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.pagination-link-dots {
   color: #000;
   background-color: white;
 }
