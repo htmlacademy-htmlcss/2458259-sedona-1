@@ -397,6 +397,26 @@ ul {
   min-width: 47px;
   min-height: 40px;
 }
+.footer-social-link {
+  display: block;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  fill: rgba(131, 179, 211, 1);
+  background-size: 47px 40px;
+}
+
+.footer-social-link:hover svg {
+  fill: rgba(104, 162, 202, 1);
+}
+
+.footer-social-link:focus svg {
+  fill: rgba(104, 162, 202, 1);
+}
+
+.footer-social-link:active svg {
+  fill: rgba(104, 162, 202, 0.3);
+}
 
 .footer-contacts-adress-phone {
   width: 720px;
@@ -408,12 +428,16 @@ ul {
   text-align: center;
 }
 
-.footer-social-link {
-  display: block;
-  background-color: white;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 47px 40px;
+.footer-contacts-adress-phone:hover {
+  color: rgba(117, 97, 87, 1);
+}
+
+.footer-contacts-adress-phone:focus {
+  color: rgba(117, 97, 87, 1);
+}
+
+.footer-contacts-adress-phone:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .catalog {
@@ -621,6 +645,18 @@ ul {
   border-radius: 4px;
 }
 
+.card-grid-toggle:hover {
+  border-color: rgba(0, 0, 0, 1);
+}
+
+.card-grid-toggle:focus {
+  border-color: rgba(104, 162, 202, 1);
+}
+
+.card-grid-toggle:active {
+  border-color: rgba(0, 0, 0, 1);
+}
+
 .catalog-hotels {
   font-size: 30px;
   font-weight: 700;
@@ -633,9 +669,24 @@ ul {
   height: 49px;
   border: 2px solid rgba(229, 229, 229, 1);
   border-radius: 4px;
+  appearance: none;
+  padding: 12px 20px;
+  padding-right: 40px;
+  background-image: url("../images/bird.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
   color: #333;
   font-size: 18px;
   line-height: 21px;
+}
+
+.select-control:hover {
+  border-color: rgba(104, 162, 202, 1);
+}
+
+.select-control:focus {
+  border-color: rgba(63, 94, 114, 1);
+  outline: none;
 }
 
 .hotels-list {
