@@ -75,6 +75,32 @@ ul {
   padding: 0;
 }
 
+.button-brown:hover {
+  background-color: rgba(97, 80, 72, 1);
+}
+
+.button-brown:focus {
+  background-color: rgba(97, 80, 72, 1);
+}
+
+.button-brown:active {
+  background-color: rgba(117, 97, 87, 1);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-blue:hover {
+  background-color: rgba(104, 162, 202, 1);
+}
+
+.button-blue:focus {
+  background-color: rgba(104, 162, 202, 1);
+}
+
+.button-blue:active {
+  background-color: rgba(130, 179, 211, 1);
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .navigation {
   display: flex;
   flex-wrap: wrap;
@@ -349,6 +375,18 @@ ul {
   text-transform: uppercase;
 }
 
+.newsletter-title,
+.newsletter-text-m {
+  width: 475px;
+  margin: 0;
+  margin-left: 362px;
+}
+
+.newsletter-text-m {
+  margin-top: 20px;
+  margin-bottom: 54px;
+}
+
 .newsletter-form {
   display: flex;
   flex-wrap: wrap;
@@ -356,8 +394,10 @@ ul {
 }
 
 .field {
+  font-size: 18px;
   padding: 0;
-  width: 458px;
+  padding-left: 20px;
+  width: 432px;
   height: 52px;
   border: none;
   border-radius: 4px 0 0 4px;
@@ -475,7 +515,19 @@ ul {
 }
 
 .breadcrumbs-link-home {
-  color: white;
+  fill: white;
+}
+
+.breadcrumbs-item:hover svg {
+  fill: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-item:focus svg {
+  fill: rgba(255, 255, 255, 1);
+}
+
+.breadcrumbs-item:active svg {
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 .catalog-filter {
@@ -552,11 +604,30 @@ ul {
   color: #ffffff;
   background-color: #82b3d3;
   border-radius: 4px;
+  border: 0;
   padding: 8px 50px;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.button-reset {
+  background-color: transparent;
+}
+
+.button-reset:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.button-reset:focus {
+  color: rgba(255, 255, 255, 1);
+  border-color: rgba(131, 179, 211, 1);
+  border: 3px;
+}
+
+.button-reset:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-cards {
@@ -565,10 +636,6 @@ ul {
 
 .button-submit {
   margin-bottom: 32px;
-}
-
-.button-reset {
-  background-color: black;
 }
 
 .range {
@@ -805,8 +872,20 @@ ul {
   background-color: rgba(130, 179, 211, 1);
 }
 
+.pagination-page:hover {
+  background-color: rgba(104, 162, 202, 1);
+}
+
+.pagination-page:focus {
+  background-color: rgba(104, 162, 202, 1);
+}
+
+.pagination-page:active {
+  background-color: rgba(130, 179, 211, 1);
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .pagination-link {
-  background-color: #82b3d3;
   color: #ffffff;
   text-decoration: none;
 }
