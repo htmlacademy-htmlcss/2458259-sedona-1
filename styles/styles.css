@@ -20,6 +20,7 @@ body {
   font-family: "PT Sans", "Arial", sans-serif;
   display: flex;
   flex-direction: column;
+  background-color: rgba(255, 255, 255, 1);
   min-height: 100%;
   font-size: 24px;
   line-height: 28px;
@@ -40,10 +41,12 @@ ul {
   width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .button {
   display: inline-block;
+  font-family: inherit;
   cursor: pointer;
   color: #ffffff;
   background-color: #756157;
@@ -56,13 +59,15 @@ ul {
 
 .button-small {
   width: 160px;
-  height: 40px;
+  height: 36px;
   font-size: 16px;
   line-height: 20px;
   margin: 0;
   padding: 0;
   color: rgb(255, 255, 255);
   font-weight: 700;
+  border-radius: 4px;
+  margin-right: -3px;
 }
 
 .button-big {
@@ -160,7 +165,7 @@ ul {
   left: 16px;
   right: 16px;
   bottom: -1px;
-  width: 68px;
+  width: 69%;
   border: 1px solid rgba(117, 98, 87, 1);
   content: "";
 }
@@ -211,6 +216,10 @@ ul {
   background-color: #756157;
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.hero-block {
+  margin-top: 54px;
 }
 
 .hero::after {
@@ -295,6 +304,7 @@ ul {
 }
 
 .advantages-title {
+  position: relative;
   width: 175px;
   height: 56px;
   margin: 0;
@@ -309,9 +319,14 @@ ul {
   position: absolute;
   width: 60px;
   height: 2px;
-  background-color: black;
-  top: 188px;
-  left: 170px;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 86px;
+  right: 57px;
+}
+
+.advantages-title-city::after,
+.advantages-title-devil::after {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .advantages-city,
@@ -432,6 +447,7 @@ ul {
   width: 475px;
   margin: 0;
   margin-left: 362px;
+  margin-top: -6px;
 }
 
 .newsletter-text-m {
@@ -563,28 +579,150 @@ ul {
 
 .modal {
   position: relative;
+  display: flex;
   margin: auto;
-  padding: 40px;
+  padding: 0;
   background-color: #ffffff;
+  width: 717px;
+  height: 576px;
+  border-radius: 30px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
 }
 
 .modal-auth {
   width: 717px;
 }
 
+.modal-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 0;
-  right: 0;
-  width: 56px;
-  height: 44px;
+  top: 64px;
+  right: 52px;
+  width: 52px;
+  height: 52px;
   background-color: #ffffff;
   border: none;
-  background-image: url("");
+  background-image: url("../images/modal-close.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+}
+
+.modal-container-close {
+  display: none;
+}
+
+.filter-date-group,
+.filter-person-group {
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 48px;
+}
+
+.filter-date-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 144px;
+  justify-content: space-between;
+  border: none;
+}
+
+.filter-date-item {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.date-start {
+  margin-right: 24px;
+}
+
+.date-finish {
+  margin-right: 18px;
+}
+
+.date-filter {
+  height: 48px;
+  width: 420px;
+  background-color: rgba(242, 242, 242, 1);
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.filter-person-list {
+  display: flex;
+  width: 577px;
+  height: 48px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.filter-person-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 247px;
+  justify-content: space-between;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  align-items: center;
+}
+
+.person-filter {
+  border: none;
+  background-color: rgba(242, 242, 242, 1);
+  border-radius: 4px;
+  width: 110px;
+  height: 48px;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  padding: 0;
+}
+
+.person-kids {
+  position: relative;
+}
+
+.person-kids::after {
+  content: url("../images/info-modal.svg");
+  position: absolute;
+  margin-left: 10px;
+}
+
+.button-search {
+  width: 557px;
+  height: 60px;
+  background-color: rgba(131, 179, 211, 1);
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+  font-family: inherit;
 }
 
 .catalog {
@@ -621,6 +759,17 @@ ul {
   text-decoration: none;
 }
 
+.link-home {
+  position: relative;
+  margin-top: 2px;
+}
+.link-home::after {
+  content: url("../images/bird-white.svg");
+  position: absolute;
+  margin-left: 10px;
+  margin-top: -2px;
+}
+
 .breadcrumbs-link-home {
   fill: white;
 }
@@ -643,6 +792,12 @@ ul {
   justify-content: space-between;
   width: 1060px;
   margin: 40px 70px 70px 70px;
+}
+
+.lable-catalog-filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .catalog-filter-group {
@@ -694,7 +849,8 @@ ul {
   height: 20px;
   width: 20px;
   margin: 0;
-  margin-right: 15px;
+  margin-right: 16px;
+  margin-left: 2px;
 }
 
 .filter-group-radio {
@@ -725,7 +881,7 @@ ul {
 }
 
 .catalog-price-item {
-  width: 143px;
+  width: 145px;
 }
 
 .catalog-filter-container {
@@ -845,6 +1001,17 @@ ul {
   width: 1060px;
   margin: 0 auto;
   justify-content: space-between;
+  position: relative;
+}
+
+.search-catalog::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 1060px;
+  top: 1075px;
+  background-color: rgba(230, 230, 230, 1);
+  border: 1px;
 }
 
 .search-hotel {
@@ -925,7 +1092,7 @@ ul {
   padding: 0;
   gap: 20px;
   margin-top: 40px;
-  margin-bottom: 80px;
+  margin-bottom: 77px;
 }
 
 .hotels-card {
@@ -977,6 +1144,7 @@ ul {
   line-height: 20px;
   width: 140px;
   height: 36px;
+  margin-top: -5px;
 }
 
 .hotels-card-desscription {
@@ -1022,14 +1190,6 @@ ul {
   justify-content: flex-start;
   width: 1060px;
   margin-bottom: 60px;
-}
-
-.pagination::before {
-  width: 1060px;
-  border: 1px;
-  position: absolute;
-  background-color: rgba(230, 230, 230, 1);
-  content: "";
 }
 
 .pagination-item {
