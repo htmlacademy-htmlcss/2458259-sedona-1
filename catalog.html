@@ -78,20 +78,25 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="lable-catalog-filter" for="swimpool">
-                      <input class="control-input-checkbox" type="checkbox" name="Бассейн" id="swimpool">
-                      Бассейн
+                      <input class="visually-hidden control-input-checkbox" type="checkbox" name="Бассейн" id="swimpool"
+                        checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Бассейн</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="lable-catalog-filter" for="parking">
-                      <input class="control-input-checkbox" type="checkbox" name="Парковка" id="parking">
-                      Парковка
+                      <input class="visually-hidden control-input-checkbox" type="checkbox" name="Парковка" id="parking"
+                        checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Парковка</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="lable-catalog-filter" for="wifi">
-                      <input class="control-input-checkbox" type="checkbox" name="Wi-Fi" id="wifi">
-                      Wi-Fi
+                      <input class="visually-hidden control-input-checkbox" type="checkbox" name="Wi-Fi" id="wifi">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Wi-Fi</span>
                     </label>
                   </li>
                 </ul>
@@ -101,21 +106,26 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="lable-catalog-filter" for="hotel">
-                      <input class="control-input-radio" type="radio" name="type-housing" value="hotel" id="hotel">
-                      Гостиница
+                      <input class="visually-hidden control-input-radio" type="radio" name="type-housing" value="hotel"
+                        id="hotel" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="lable-catalog-filter" for="motel">
-                      <input class="control-input-radio" type="radio" name="type-housing" value="motel" id="motel">
-                      Мотель
+                      <input class="visually-hidden control-input-radio" type="radio" name="type-housing" value="motel"
+                        id="motel">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Мотель</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="lable-catalog-filter" for="apartments">
-                      <input class="control-input-radio" type="radio" name="type-housing" value="apartments"
-                        id="apartments">
-                      Апартаменты
+                      <input class="visually-hidden control-input-radio" type="radio" name="type-housing"
+                        value="apartments" id="apartments">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Апартаменты</span>
                     </label>
                   </li>
                 </ul>
@@ -123,7 +133,7 @@
             </div>
             <div class="catalog-filter-input-container">
               <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Стоимость,₽:</legend>
+                <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                 <div class="catalog-filter-container">
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item catalog-price-item">
@@ -201,7 +211,7 @@
               </a>
               <span class="hotels-card-text-s">Гостиница </span>
               <b class="price">От 4000 ₽</b>
-              <button class="button hotels-card-button button-brown">Подробнее</button>
+              <a class="button hotels-card-button button-brown" href="#">Подробнее</a>
               <button class="button button-cards button-blue" type="submit">В избранное</button>
               <div class="stars">
                 <span class="rating-star"></span>
@@ -218,7 +228,7 @@
               </a>
               <span class="hotels-card-text-s">Гостиница </span>
               <b class="price">От 5000 ₽</b>
-              <button class=" button hotels-card-button button-brown">Подробнее</button>
+              <a class=" button hotels-card-button button-brown" href="#">Подробнее</a>
               <button class="button button-cards button-blue" type="submit">В избранное</button>
               <div class="stars">
                 <span class="rating-star"></span>
@@ -234,7 +244,7 @@
                 <h3 class="hotels-card-title">Desert Quail Inn</h3>
               </a>
               <span class="hotels-card-text-s">Гостиница</span> <b class="price">От 2500 ₽</b>
-              <button class="button hotels-card-button button-brown">Подробнее</button>
+              <a class="button hotels-card-button button-brown" href="#">Подробнее</a>
               <button class="button button-cards button-blue" type="submit">В избранное</button>
               <div class="stars">
                 <span class="rating-star"></span>
@@ -250,7 +260,7 @@
               </a>
               <span class="hotels-card-text-s">Гостиница </span>
               <b class="price">От 1500 ₽</b>
-              <button class="button hotels-card-button button-brown">Подробнее</button>
+              <a class="button hotels-card-button button-brown" href="#">Подробнее</a>
               <button class="button button-cards button-blue" type="submit">В избранное</button>
               <div class="stars">
                 <span class="rating-star"></span>
@@ -291,7 +301,7 @@
             <div class="newsletter-container">
               <span class="visually-hidden">
                 <label for="newsletter-email">Email</label></span>
-              <input class="field" placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email"
+              <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
                 required>
             </div>
             <button class="button button-newsletter button-big button-blue" type="submit">
