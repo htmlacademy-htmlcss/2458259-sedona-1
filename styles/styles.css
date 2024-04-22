@@ -1129,7 +1129,7 @@ body {
 }
 
 .control-input-checkbox:focus ~ .control-mark {
-  outline: 3px rgba(131, 179, 211, 1);
+  outline: 3px solid rgba(131, 179, 211, 1);
 }
 
 .control-input-radio {
@@ -1139,7 +1139,7 @@ body {
 }
 
 .control-input-radio:focus ~ .control-mark {
-  outline: 3px rgba(131, 179, 211, 1);
+  outline: 3px solid rgba(131, 179, 211, 1);
 }
 
 .filter-group-radio {
